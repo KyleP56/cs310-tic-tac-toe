@@ -21,7 +21,7 @@ public class TicTacToeView {
         /* Prompt the player to enter the row and the column of their next move.
            Return as a TicTacToeMove object. */
         
-        // INSERT YOUR CODE HERE
+       
         if (model.isXTurn()){
             System.out.println ("X's Move: \n " + "Enter the row number and column number, seperated by spaces:");
         }
