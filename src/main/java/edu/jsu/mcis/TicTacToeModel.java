@@ -75,7 +75,7 @@ public class TicTacToeModel {
 
         /* Initialize board by filling every square with empty marks */
         
-        // INSERT YOUR CODE HERE
+        
         for (int i = 0; i < board.length; i++){
             for(int j = 0, j < board[i].length; j++){
                 board[i][j] = Mark.EMPTY;
@@ -92,7 +92,7 @@ public class TicTacToeModel {
            toggle "xTurn" from true to false (or vice-versa) to switch to the
            other player before returning TRUE.  Otherwise, return FALSE. */
         
-        // INSERT YOUR CODE HERE
+        
         if (xTurn && isValidSquare(row,col) && !isSquareMarked(row,col)){
             board[row][col] = Mark.X;
             xTurn = false;
@@ -113,7 +113,7 @@ public class TicTacToeModel {
         
         /* Return TRUE if the specified location is within the bounds of the board */
         
-        // INSERT YOUR CODE HERE
+        
         if ((row >= 0) && (row < width)){
             if ((col >= 0) && (col < width)){
                 return true;
@@ -128,7 +128,7 @@ public class TicTacToeModel {
         
         /* Return TRUE if the square at specified location is marked */
         
-        // INSERT YOUR CODE HERE
+        
         if (board[row][col] == Mark.EMPTY){
             return false;
         }
@@ -142,7 +142,7 @@ public class TicTacToeModel {
         
         /* Return the mark from the square at the specified location */
         
-        // INSERT YOUR CODE HERE
+        
         return board[row][col];
             
     }
@@ -153,7 +153,7 @@ public class TicTacToeModel {
            TIE, or if the game is not over.  Return the corresponding Result
            value */
         
-        // INSERT YOUR CODE HERE
+        
         if (isMarkWin(Mark.X)){
             return Result.X;
         }
@@ -177,7 +177,7 @@ public class TicTacToeModel {
         /* Check the squares of the board to see if the specified mark is the
            winner */
         
-        // INSERT YOUR CODE HERE
+        
         boolean win = true;
 
         //check vertical
@@ -243,7 +243,7 @@ public class TicTacToeModel {
         
         /* Check the squares of the board to see if the game is a tie */
         
-        // INSERT YOUR CODE HERE
+       
         int count = 0;
         for (int row = 0; row < width; row++){
             for (int col = 0; col < width; col++){
