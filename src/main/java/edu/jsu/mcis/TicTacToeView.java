@@ -22,6 +22,15 @@ public class TicTacToeView {
            Return as a TicTacToeMove object. */
         
         // INSERT YOUR CODE HERE
+        if (model.isXTurn()){
+            System.out.println ("X's Move: \n " + "Enter the row number and column number, seperated by spaces:");
+        }
+
+        else {
+            System.out.println ("O's Move: \n" + "Enter the row number and column number, seperated by spaces:");
+        }
+
+    
 
         return null; // remove this line later!
 
